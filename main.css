@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("images/000005070001\ copy.jpg") no-repeat;
+    font-family: 'Lato', sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-body {
+    height: calc(100vh - 80px);
+    overflow: auto;
+}
+
+/* NAVIGATION */
+#navigation {
+    height: 80px;
+    padding: 20px 40px;
+}
+
+/* HOMEPAGE */
+
+#homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+#homepage #main-image {
+    height: auto;
+    width: 50%;
+    padding-right: 30px;
+    max-height: 700px;
+}
+
+#homepage .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+#homepage .text {
+    margin-bottom: 20px;
+    max-width: 70%;
+    font-family: "Trirong", serif;
+}
+
+#homepage a {
+    text-decoration: none;
+}
+
+#homepage #text-container .fa-twitter {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #homepage {
+        flex-wrap: wrap;
+    }
+
+    #homepage #main-image {
+        width: 80%;
+        padding-right: 0;
+    }
+
+    #homepage #text-container {
+        padding-top: 25px;
+        width: 80%;
+    }
+
+    #homepage #text-container .text {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #homepage {
+        padding: 0;
+    }
+}
+
+/* POEMS */
+
+#poem {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+}
+
+#poem-container {
+    margin: auto;
+}
+
+#poem-container .text {
+    margin-bottom: 10px;
+}
+
+#poem-container h2 {
+    margin-top: 25px;
+}
+
+#poem-container h2:first-of-type {
+    margin-top: 0;
+}
+
+.poemsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+  
+#poems .text {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Trirong", serif;
+}
+
+#poems .text p {
+      margin-top: 0;
+      margin-bottom: 1em;
+}
+
+#poems .text h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+a { 
+margin-bottom: 10px;
+color: #344c73; 
+}
+
+/* PRESS */
+
+#Press {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.mediasection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+  }
+
+/* .text {
+    margin-top: 10px;
+    text-align: left;
+          font-family: "Trirong", serif;
+  }
+
+.text p {
+      margin-top: 0;
+      margin-bottom: 1em;
+  }
+
+.text h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+  } */
+
+/* CONTACT */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #e9ebed;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #669bf1;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+}
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  body {
+    font-family: "Trirong", serif;
+  }
+
+
+/* Gallery */
+
+#photography {
+    display: flex;
+    align-items: center;
+}
+
+#photography #collections {
+    margin: auto;
+    text-align: center;
+}
+
+#photography #collections ul {
+    list-style: none;
+}
+
+#photography #collections ul li {
+    padding: 10px;
+    font-size: 19px;
+}
+
+#photography #collections ul li:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+#photography #collections ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#photography-recent-work {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*YBATQL */
+
+#ybatql-description {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#ybatql-description #book-cover {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#ybatql-description #book-cover a {
+    margin: auto;
+}
+  
+#ybatql-description #cover-image {
+    width: 100%;
+    height: auto;
+    padding: 35px;
+}
+
+#ybatql-description #description {
+    height: 100%;
+    overflow: auto;
+    padding: 15px 35px;
+    width: 55%;
+}
+
+#ybatql-description #order-button { 
+    margin: 25px 0;
+    background: #165da1;
+    padding: 10px 20px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ybatql-description #order-button:hover {
+    background: #2e98cc;
+}
+
+@media screen and (max-width: 425px) {
+    #ybatql-description {
+        flex-direction: column;
+    }
+
+    #ybatql-description #book-cover {
+        width: 100%;
+    }
+
+    #ybatql-description #cover-image {
+        width: 100%;
+    }
+
+    #ybatql-description #description {
+        overflow: initial;
+        width: 100%;
+    }
+}
+	
+    /*Contact Success */
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+#contact-container button {
+    padding: 10px 25px;
+    width: 100%;
+    font-family: "Trirong", serif;
+}
+
