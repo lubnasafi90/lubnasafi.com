@@ -8,7 +8,7 @@
 
         <title>Damascus</title>
 
-        <script src="../apps.js?version=1.0.0" defer></script>
+        <script src="../apps.js?version=1.0.0"></script>
         <meta name="viewport" content="width=device-width, initial-scale = 1">
         <metahttp-equiv="cache-control" content="no-cache">
         <metahttp-equiv="expires" content="0">
@@ -40,75 +40,26 @@
         <div class="gallery-container">
 	
             <div data-am-fadeshow="next-prev-navigation">
-        
-                <!-- Radio -->
-                <input type="radio" name="css-fadeshow" id="slide-1" />
-                <input type="radio" name="css-fadeshow" id="slide-2" />
-                <input type="radio" name="css-fadeshow" id="slide-3" />
-                <input type="radio" name="css-fadeshow" id="slide-4" />
-                <input type="radio" name="css-fadeshow" id="slide-5" />
-                <input type="radio" name="css-fadeshow" id="slide-6" />
-                <input type="radio" name="css-fadeshow" id="slide-7" />
-                <input type="radio" name="css-fadeshow" id="slide-8" />
-                <input type="radio" name="css-fadeshow" id="slide-9" />
-        
-                <!-- Slides -->
-                <div class="fs-slides">
-                    <div class="fs-slide" style="background-image: url(../images/damascus/1.jpg);"></div>
-                    <div class="fs-slide" style="background-image: url(../images/damascus/2.jpg);"></div>
-                    <div class="fs-slide" style="background-image: url(../images/damascus/3.jpg);"></div>
-                    <div class="fs-slide" style="background-image: url(../images/damascus/4.jpg);"></div>
-                    <div class="fs-slide" style="background-image: url(../images/damascus/5.jpg);"></div>
-                    <div class="fs-slide" style="background-image: url(../images/damascus/6.jpg);"></div>
-                    <div class="fs-slide" style="background-image: url(../images/damascus/7.jpg);"></div>
-                    <div class="fs-slide" style="background-image: url(../images/damascus/8.jpg);"></div>
-                    <div class="fs-slide" style="background-image: url(../images/damascus/9.jpg);"></div>
-                </div>
-        
-                <!-- Quick Navigation -->
-                <div class="fs-quick-nav">
-                    <label class="fs-quick-btn" for="slide-1"></label>
-                    <label class="fs-quick-btn" for="slide-2"></label>
-                    <label class="fs-quick-btn" for="slide-3"></label>
-                    <label class="fs-quick-btn" for="slide-4"></label>
-                    <label class="fs-quick-btn" for="slide-5"></label>
-                    <label class="fs-quick-btn" for="slide-6"></label>
-                    <label class="fs-quick-btn" for="slide-7"></label>
-                    <label class="fs-quick-btn" for="slide-8"></label>
-                    <label class="fs-quick-btn" for="slide-9"></label>
-                </div>
-                
-                <!-- Prev Navigation -->
-                <div class="fs-prev-nav">
-                    <label class="fs-prev-btn" for="slide-1"></label>
-                    <label class="fs-prev-btn" for="slide-2"></label>
-                    <label class="fs-prev-btn" for="slide-3"></label>
-                    <label class="fs-prev-btn" for="slide-4"></label>
-                    <label class="fs-prev-btn" for="slide-5"></label>
-                    <label class="fs-prev-btn" for="slide-6"></label>
-                    <label class="fs-prev-btn" for="slide-7"></label>
-                    <label class="fs-prev-btn" for="slide-8"></label>
-                    <label class="fs-prev-btn" for="slide-9"></label>
-                </div>
-                
-                <!-- Next Navigation -->
-                <div class="fs-next-nav">
-                    <label class="fs-next-btn" for="slide-1"></label>
-                    <label class="fs-next-btn" for="slide-2"></label>
-                    <label class="fs-next-btn" for="slide-3"></label>
-                    <label class="fs-next-btn" for="slide-4"></label>
-                    <label class="fs-next-btn" for="slide-5"></label>
-                    <label class="fs-next-btn" for="slide-6"></label>
-                    <label class="fs-next-btn" for="slide-7"></label>
-                    <label class="fs-next-btn" for="slide-8"></label>
-                    <label class="fs-next-btn" for="slide-9"></label>
-                </div>
-        
+
+                <div id="image-slideshow"></div>
+
             </div>
             
         </div>
 
     </div>
-
+    <script>
+        createSlideShow([
+            "/damascus/1.jpg",
+            "/damascus/2.jpg",
+            "/damascus/3.jpg",
+            "/damascus/4.jpg",
+            "/damascus/5.jpg",
+            "/damascus/6.jpg",
+            "/damascus/7.jpg",
+            "/damascus/8.jpg",
+            "/damascus/9.jpg",
+        ]);
+    </script>
 </body>
 </html>
