@@ -40,14 +40,13 @@ body {
     max-height: 700px;
 }
 
-#homepage .text-container {
+#homepage #text-container {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
 #homepage .text {
-    margin-bottom: 20px;
-    max-width: 70%;
+    margin-bottom: 80px;
     font-family: "Trirong", serif;
 }
 
@@ -103,6 +102,7 @@ body {
 }
 
 #poem-container .text {
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -280,11 +280,25 @@ input[type=submit]:hover {
 
 #photography #collections ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 0;
 }
 
 #photography #collections ul li {
+    background: #000;
+    color: #fff;
     padding: 10px;
     font-size: 19px;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: cover !important;
 }
 
 #photography #collections ul li:hover {
@@ -294,7 +308,7 @@ input[type=submit]:hover {
 
 #photography #collections ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 #photography-recent-work {
